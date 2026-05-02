@@ -19,8 +19,7 @@ import { toast } from "@/hooks/use-toast";
 import { cn } from "@/lib/utils";
 
 function apiUrl(path: string): string {
-  const base = import.meta.env.VITE_API_URL ?? "";
-  return `${base}${path}`;
+  return `https://ai-backend-api-srft.onrender.com${path}`;
 }
 
 type Overview = {
